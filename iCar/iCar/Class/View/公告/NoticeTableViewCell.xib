@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="112" id="iQf-AK-5ls" customClass="NoticeTableViewCell" customModule="iCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iQf-AK-5ls" id="ZLK-PI-zY2">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年轻时尚 新颖劲客内心满意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1K-NC-wr4">
+                        <rect key="frame" x="18" y="18" width="213" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="ntP-xW-TWM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/09/09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7Z-Uc-YKN">
+                        <rect key="frame" x="236.5" y="20.5" width="65.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年10月30日上市，雷诺款卡宾在武汉车展正式发售，售价1000万，相比老款，更贵更奢华" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOa-xY-wfY">
+                        <rect key="frame" x="18" y="45" width="284" height="46.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzZ-Bs-DIN">
+                        <rect key="frame" x="0.0" y="101.5" width="320" height="10"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="2qE-fV-TSG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="WOa-xY-wfY" secondAttribute="trailing" constant="10" id="8IO-eK-o3z"/>
+                    <constraint firstItem="WOa-xY-wfY" firstAttribute="leading" secondItem="ZLK-PI-zY2" secondAttribute="leadingMargin" constant="10" id="9Iq-cu-7qn"/>
+                    <constraint firstItem="hzZ-Bs-DIN" firstAttribute="top" secondItem="WOa-xY-wfY" secondAttribute="bottom" constant="10" id="DOB-EQ-cTP"/>
+                    <constraint firstItem="hzZ-Bs-DIN" firstAttribute="leading" secondItem="ZLK-PI-zY2" secondAttribute="leading" id="E0R-1V-9ht"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="y7Z-Uc-YKN" secondAttribute="trailing" constant="10" id="EsL-fn-asc"/>
+                    <constraint firstAttribute="trailing" secondItem="hzZ-Bs-DIN" secondAttribute="trailing" id="Hdn-ej-HQy"/>
+                    <constraint firstItem="WOa-xY-wfY" firstAttribute="top" secondItem="k1K-NC-wr4" secondAttribute="bottom" constant="10" id="YGK-zW-MHg"/>
+                    <constraint firstItem="y7Z-Uc-YKN" firstAttribute="bottom" secondItem="k1K-NC-wr4" secondAttribute="bottom" id="l65-jd-drd"/>
+                    <constraint firstItem="k1K-NC-wr4" firstAttribute="leading" secondItem="ZLK-PI-zY2" secondAttribute="leadingMargin" constant="10" id="o9E-bE-5Tf"/>
+                    <constraint firstAttribute="bottom" secondItem="hzZ-Bs-DIN" secondAttribute="bottom" id="qzL-QF-CZP"/>
+                    <constraint firstItem="k1K-NC-wr4" firstAttribute="top" secondItem="ZLK-PI-zY2" secondAttribute="topMargin" constant="10" id="vc8-xc-TTn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="fZm-fh-FIw"/>
+            <point key="canvasLocation" x="25" y="-80"/>
+        </tableViewCell>
+    </objects>
+</document>

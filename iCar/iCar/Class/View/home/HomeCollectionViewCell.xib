@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="iCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="187.5" height="147.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187.5" height="147.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="临时占位" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-kx-3yN">
+                        <rect key="frame" x="69" y="30" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="BfJ-hH-NC1"/>
+                            <constraint firstAttribute="width" constant="50" id="HPN-lG-LMt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的客户" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja7-Jk-8ub">
+                        <rect key="frame" x="59" y="101.5" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be8-C7-JKu">
+                        <rect key="frame" x="104" y="15" width="30" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.65638404946442575" blue="0.11180209241958727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="O6j-bN-xAa"/>
+                            <constraint firstAttribute="width" constant="30" id="lvn-AI-Xv4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ja7-Jk-8ub" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0Ls-Z1-Uc7"/>
+                <constraint firstItem="Be8-C7-JKu" firstAttribute="centerY" secondItem="m4q-kx-3yN" secondAttribute="top" id="cFM-xw-rdq"/>
+                <constraint firstItem="m4q-kx-3yN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eN4-Rc-fOH"/>
+                <constraint firstItem="Be8-C7-JKu" firstAttribute="centerX" secondItem="m4q-kx-3yN" secondAttribute="trailing" id="iNf-ng-dHY"/>
+                <constraint firstAttribute="bottom" secondItem="ja7-Jk-8ub" secondAttribute="bottom" constant="25" id="jey-4p-bT5"/>
+                <constraint firstItem="m4q-kx-3yN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="ppb-uJ-hCb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="141" height="117"/>
+            <connections>
+                <outlet property="icon" destination="m4q-kx-3yN" id="wYD-fp-dyX"/>
+                <outlet property="numberLabel" destination="Be8-C7-JKu" id="15I-TU-b7H"/>
+                <outlet property="titleLabel" destination="ja7-Jk-8ub" id="Jiv-Br-dzb"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="87"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="临时占位" width="30" height="30"/>
+    </resources>
+</document>

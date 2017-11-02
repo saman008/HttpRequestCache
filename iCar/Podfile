@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'iCar' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for iCar
+
+pod 'Alamofire’,'~>4.5.1'
+pod ’YYModel’,’~>1.0.4’
+pod ’Kingfisher’,’~>4.1.1’
+pod ’MJRefresh’,’~>3.1.14’
+pod 'SVProgressHUD', '~>2.2.2'
+pod 'IQKeyboardManagerSwift', '~>5.0.4'
+pod 'SDCycleScrollView', '~>1.73'
+pod 'TZImagePickerController'
+pod 'JBChartView' #, '~>3.0.13'
+pod 'Charts'
+#pod 'Bugly','~>2.4.8'
+#pod 'WechatOpenSDK'
+#pod 'Socket.IO-Client-Swift', '~>11.0.1'
+
+#pod 'JTAppleCalendar', '6.0.0'#日历
+#pod 'FMDB','~>2.7.2'
+#pod 'BaiduMapKit','~>3.3.0'
+
+
+end

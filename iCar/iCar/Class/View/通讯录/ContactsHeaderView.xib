@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ContactsHeaderView" customModule="iCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdq-H8-OWH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="销售一部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNz-3b-G8M">
+                    <rect key="frame" x="10" y="15" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIF-lj-ZWd">
+                    <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fIF-lj-ZWd" secondAttribute="height" multiplier="1:1" id="Vah-AJ-EdF"/>
+                    </constraints>
+                    <state key="normal" image="微博"/>
+                    <state key="selected" image="临时占位"/>
+                    <connections>
+                        <action selector="showBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="shi-Rv-8JJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fIF-lj-ZWd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5eB-4d-Nt2"/>
+                <constraint firstItem="Cdq-H8-OWH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IVg-6N-IaH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Cdq-H8-OWH" secondAttribute="bottom" id="Lga-mb-dVr"/>
+                <constraint firstItem="eNz-3b-G8M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="bjp-hY-9KG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Cdq-H8-OWH" secondAttribute="trailing" id="gu8-V6-GeD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fIF-lj-ZWd" secondAttribute="trailing" id="gvh-7z-VZU"/>
+                <constraint firstItem="Cdq-H8-OWH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mx2-yI-yBa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fIF-lj-ZWd" secondAttribute="bottom" id="nyX-Px-nQl"/>
+                <constraint firstItem="eNz-3b-G8M" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vL6-l1-CdK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="sectionNameLabel" destination="eNz-3b-G8M" id="YDG-oS-inE"/>
+                <outlet property="showBtn" destination="fIF-lj-ZWd" id="xWu-fQ-4Zw"/>
+            </connections>
+            <point key="canvasLocation" x="174.5" y="-308"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="临时占位" width="30" height="30"/>
+        <image name="微博" width="44" height="44"/>
+    </resources>
+</document>

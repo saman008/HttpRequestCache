@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Charts (3.0.4):
+    - Charts/Core (= 3.0.4)
+  - Charts/Core (3.0.4)
+  - IQKeyboardManagerSwift (5.0.4)
+  - JBChartView (3.0.13)
+  - Kingfisher (4.1.1)
+  - MJRefresh (3.1.14.1)
+  - SDCycleScrollView (1.73):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SVProgressHUD (2.2.2)
+  - TZImagePickerController (1.9.3)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5.1)
+  - Charts
+  - IQKeyboardManagerSwift (~> 5.0.4)
+  - JBChartView
+  - Kingfisher (~> 4.1.1)
+  - MJRefresh (~> 3.1.14)
+  - SDCycleScrollView (~> 1.73)
+  - SVProgressHUD (~> 2.2.2)
+  - TZImagePickerController
+  - YYModel (~> 1.0.4)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Charts: 0705898046257443f0afbbc3179f4b67507b6e48
+  IQKeyboardManagerSwift: a0592bb636b10a9a1cf75d2b2c61144226226c84
+  JBChartView: ea240dca7b83a92f47d4ae766beb3714753988a1
+  Kingfisher: 6793a473357b5dbee42b0068ef203fe8325f259e
+  MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
+  SDCycleScrollView: d0fd5fe40a80918371fd8939214eb3be81033d83
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 8f31ef6912c89a560b0adf9c8061fa9239ff2cc3
+
+COCOAPODS: 1.1.1

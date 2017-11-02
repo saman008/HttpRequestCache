@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="StorageTableViewCell" customModule="iCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="微博" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-cB-IfN">
+                        <rect key="frame" x="10" y="10" width="43.5" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SJK-cB-IfN" secondAttribute="height" id="OWH-h0-JDU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京现代 1.6T 白色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zo-KX-h0j">
+                        <rect key="frame" x="63.5" y="10" width="128.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宁波市直营店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go4-b6-qSr">
+                        <rect key="frame" x="63" y="35.5" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15辆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-3z-CrZ">
+                        <rect key="frame" x="272.5" y="21" width="37.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wHA-3z-CrZ" secondAttribute="trailing" constant="10" id="C81-Hp-Uur"/>
+                    <constraint firstItem="8Zo-KX-h0j" firstAttribute="leading" secondItem="SJK-cB-IfN" secondAttribute="trailing" constant="10" id="Nkx-oJ-3PS"/>
+                    <constraint firstItem="SJK-cB-IfN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Q7O-hf-QB2"/>
+                    <constraint firstItem="SJK-cB-IfN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aeH-HZ-95y"/>
+                    <constraint firstItem="8Zo-KX-h0j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dsH-1T-lUm"/>
+                    <constraint firstAttribute="bottom" secondItem="SJK-cB-IfN" secondAttribute="bottom" constant="10" id="jUP-ei-4En"/>
+                    <constraint firstAttribute="bottom" secondItem="Go4-b6-qSr" secondAttribute="bottom" constant="10" id="lfr-ew-xuU"/>
+                    <constraint firstItem="Go4-b6-qSr" firstAttribute="leading" secondItem="SJK-cB-IfN" secondAttribute="trailing" constant="10" id="w5U-ai-9Rn"/>
+                    <constraint firstItem="wHA-3z-CrZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y9F-0C-lMi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="countLabel" destination="wHA-3z-CrZ" id="wAM-j6-PM0"/>
+                <outlet property="icon" destination="SJK-cB-IfN" id="arp-TP-jfs"/>
+                <outlet property="nameLabel" destination="8Zo-KX-h0j" id="QK8-Xf-VOt"/>
+                <outlet property="storeLabel" destination="Go4-b6-qSr" id="kWU-Br-Ix2"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="64"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="微博" width="44" height="44"/>
+    </resources>
+</document>
